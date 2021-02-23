@@ -1,0 +1,28 @@
+
+body{margin:0; font-family:'Fira Code';}
+.particle{
+	position:absolute;
+	-webkit-animation-name:rotateandmoveup;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function:linear;
+	background:rgba(255,255,255,0.2); 
+}
+
+@-webkit-keyframes rotateandmoveup{
+	from{bottom:-200px;transform:none;}
+	to{bottom:100vh;transform: rotate(360deg)}
+}
+#fc{
+	position:relative;
+	background:#f05;
+	width:100vw;
+	height:100vh;
+	overflow:hidden;
+}
+#heading{
+	font-size:30px;
+	line-height:100vh;
+	text-align:center;
+	color:#fff;
+	font-weight:600;
+}
